@@ -29,6 +29,7 @@ public class Producto implements Serializable{
     private Categoria categoria;
 }
 
+
 /*
 create table categoria (
   id_categoria INT NOT NULL AUTO_INCREMENT,
