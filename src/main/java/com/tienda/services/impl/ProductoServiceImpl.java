@@ -1,4 +1,3 @@
-
 package com.tienda.services.impl;
 
 import com.tienda.dao.ProductoDao;
@@ -10,23 +9,24 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-public class ProductoServiceImpl 
+public class ProductoServiceImpl
         implements ProductoService {
-    
-@Autowired
-private ProductoDao productoDao;
+
+    @Autowired
+    private ProductoDao productoDao;
+
     @Override
-    @Transactional(readOnly=true)
-    
+    @Transactional(readOnly = true)
+
     public List<Producto> getProducto(boolean activos) {
-      var lista = productoDao.findAll();
-      if (activos) {
-          //se deben eliminar de la lista..
-          lista.removeIf(c -> !c.isActivo());
-      }
-      return lista;
+        var lista = productoDao.findAll();
+        if (activos) {
+            //se deben eliminar de la lista..
+            lista.removeIf(c -> !c.isActivo());
+        }
+        return lista;
     }
-    
+
     @Override
     @Transactional(readOnly = true)
     public Producto getProducto(Producto producto) {
@@ -44,5 +44,24 @@ private ProductoDao productoDao;
     public void delete(Producto producto) {
         productoDao.delete(producto);
     }
-    
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> consultaAmpliada(double precioInf, double precioSup) {
+        return productoDao.findByPrecioBetweenOrderByDescripcion(precioInf, precioSup);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> consultaJPQL(double precioInf, double precioSup){
+        return productoDao.consultaJPQL(precioInf, precioSup);
+    }
+           
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> consultaSQL(double precioInf, double precioSup){
+        return productoDao.consultaSQL(precioInf, precioSup);
+    }
+
 }

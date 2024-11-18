@@ -172,11 +172,11 @@ DEFAULT CHARACTER SET = utf8mb4;
 
 INSERT INTO ruta (patron, rol_name) VALUES ('/producto/nuevo', 'ADMIN'),
 ('/producto/guardar', 'ADMIN'),
-('/producto/modificar/** ', 'ADMIN'),
+('/producto/modificar/**', 'ADMIN'),
 ('/producto/eliminar/**', 'ADMIN'),
 ('/categoria/nuevo', 'ADMIN'),
 ('/categoria/guardar', 'ADMIN'),
-('/categoria/modificar/** ', 'ADMIN'),
+('/categoria/modificar/**', 'ADMIN'),
 ('/categoria/eliminar/**', 'ADMIN'),
 ('/usuario/**', 'ADMIN'),
 ('/constante/**', 'ADMIN'),
