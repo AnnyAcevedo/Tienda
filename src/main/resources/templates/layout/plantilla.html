@@ -7,7 +7,7 @@
         <title>TechShop</title>
         <meta charset="UTF-8"/>
 
-        
+
         <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
         <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
         <script th:src="@{/js/rutinas.js}" type ="text/javascript"></script>
@@ -130,6 +130,36 @@
 
                             </li>
 
+                        </ul>
+                        <div id="resultBlock">
+
+                        </div>
+                        <ul class="navbar-nav"
+                            sec:authorize='!isAuthenticated()'>
+                            <li class='nav-item'>
+                                <a class='nav-menu-link nav-link'
+                                   th:href='@{/login}'>
+                                    <i class="fas fa-right-to-bracket"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav"
+                            sec:authorize='isAuthenticated()'>
+                            <li class='nav-item text-white my-auto'>
+                                <img th:src="@{${session.imagenUsuario}}"                                      
+                                     height="40" 
+                                     class="rounded-circle"
+                                     alt=""/>
+                                <span sec:authentication='name'>Jhon</span>
+                            </li>
+                            <li class='nav-item text-white my-auto'>
+                                <form method="post" 
+                                      th:action='@{/logout}'>
+                                    <button class='btn btn-dark'>
+                                        <i class="fas fa-right-from-bracket"></i> 
+                                    </button>
+                                </form>
+                            </li>
                         </ul>
 
                     </div>
