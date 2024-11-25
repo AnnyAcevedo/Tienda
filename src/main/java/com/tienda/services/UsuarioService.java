@@ -1,5 +1,5 @@
 package com.tienda.services;
-
+/*
 import com.tienda.domain.Usuario;
 import java.util.List;
 
@@ -30,4 +30,4 @@ public interface UsuarioService {
     // Se elimina el usuario que tiene el id pasado por parámetro
     public void delete(Usuario usuario);
     
-}
+}*/

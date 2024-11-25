@@ -1,5 +1,5 @@
 package com.tienda.domain;
-
+/*
 import jakarta.persistence.*;
 import java.io.Serializable;
 import lombok.Data;
@@ -13,4 +13,4 @@ public class Role implements Serializable {
     @Id    
     @Column(name="rol")
     private String rol;
-}
+} */

@@ -1,5 +1,5 @@
 package com.tienda.services.impl;
-
+/*
 import com.tienda.dao.RolDao;
 import com.tienda.domain.Rol;
 import com.tienda.services.RolService;
@@ -40,4 +40,4 @@ public class RolServiceImpl
     public void delete(Rol rol) {
         rolDao.delete(rol);
     }
-}
+}*/

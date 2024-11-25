@@ -51,7 +51,7 @@
                             </div> 
                             <div class="card-body">
                                 <p>[[${p.detalle}]]</p>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -63,13 +63,13 @@
             </div>
 
         </section>
-        
+
         <!-- 1 Sección para crear los formularios de consultas-->
         <section th:fragment="consultas">
             <div class="row row-cols-3 p-2">
                 <div class="card p-2">
                     <form method="post"
-                        action="/pruebas/consultaAmpliada">
+                          action="/pruebas/consultaAmpliada">
                         <div class="card-header bg-primary text-white texte-center">
                             <h4>[[#{pruebas.ampliadas}]]</h4>
                         </div>
@@ -81,7 +81,7 @@
                                        th:value"${precioInf}"/>
                             </div>
                         </div>
-                        
+
                         <div class="card-body bg-warning">
                             <div class="mb-3">
                                 <label for="precioSup">[[#{pruebas.precio.superior}]]</label>
@@ -98,10 +98,10 @@
                         </div>
                     </form> 
                 </div>
-                
+
                 <div class="card p-2">
                     <form method="post"
-                        action="/pruebas/consultaJPQL">
+                          action="/pruebas/consultaJPQL">
                         <div class="card-header bg-primary text-white texte-center">
                             <h4>[[#{pruebas.jpql}]]</h4>
                         </div>
@@ -113,7 +113,7 @@
                                        th:value"${precioInf}"/>
                             </div>
                         </div>
-                        
+
                         <div class="card-body bg-warning">
                             <div class="mb-3">
                                 <label for="precioSup">[[#{pruebas.precio.superior}]]</label>
@@ -130,10 +130,10 @@
                         </div>
                     </form> 
                 </div>
-                
+
                 <div class="card p-2">
                     <form method="post"
-                        action="/pruebas/consultaSQL">
+                          action="/pruebas/consultaSQL">
                         <div class="card-header bg-primary text-white texte-center">
                             <h4>[[#{pruebas.nativo}]]</h4>
                         </div>
@@ -145,7 +145,7 @@
                                        th:value"${precioInf}"/>
                             </div>
                         </div>
-                        
+
                         <div class="card-body bg-warning">
                             <div class="mb-3">
                                 <label for="precioSup">[[#{pruebas.precio.superior}]]</label>
@@ -162,7 +162,26 @@
                         </div>
                     </form> 
                 </div>
-                
+
+            </div>
+
+            <div class="card p-2">
+                <form method="post" action="/pruebas/consultaJPQLExistencias">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h4>[[#{pruebas.existencias}]]</h4>
+                    </div>
+                    <div class="card-body bg-white text-black">
+                        <div class="mb-3">
+                            <label for="existencias" class="text-black">[[#{pruebas.existencias.limite}]]</label>
+                            <input type="number" name="existencias" th:value="${existencias}" class="form-control text-black" />
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white text-center">
+                        <button class="btn btn-primary text-white" type="submit">
+                            <i class="fas fa-magnifying-glass"></i>[[#{pruebas.existencias.comprobar}]]
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
 

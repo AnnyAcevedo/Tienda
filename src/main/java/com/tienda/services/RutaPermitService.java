@@ -1,10 +1,10 @@
 package com.tienda.services;
 
-import com.tienda.domain.RutaPermit;
-import java.util.List;
+//import com.tienda.domain.RutaPermit;
+//import java.util.List;
 
 public interface RutaPermitService {
-    
+  /*  
     // Se obtiene un listado de rutapermits en un List
     public List<RutaPermit> getRutaPermits();
     
@@ -16,6 +16,6 @@ public interface RutaPermitService {
     public void save(RutaPermit rutapermit);
     
     // Se elimina el rutapermit que tiene el id pasado por parámetro
-    public void delete(RutaPermit rutaPermit);
+    public void delete(RutaPermit rutaPermit); */
     
 }

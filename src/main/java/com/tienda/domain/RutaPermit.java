@@ -1,5 +1,5 @@
 package com.tienda.domain;
-
+/*
 import jakarta.persistence.*;
 import java.io.Serializable;
 import lombok.Data;
@@ -14,4 +14,4 @@ public class RutaPermit implements Serializable {
     @Column(name="id_ruta")
     private Long idRuta;        
     private String patron;
-}
+}*/

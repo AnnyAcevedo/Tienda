@@ -99,4 +99,15 @@ public class PruebasController {
         model.addAttribute("precioSup",precioSup);
         return "/pruebas/listado2";
     }
+    
+    //practica
+    @PostMapping("/consultaJPQLExistencias")
+    public String consultasJPQLExistencias(
+            @RequestParam(value = "existencias") int limite,
+            Model model) {
+        var productos = productoService.consultaJPQLExistencias(limite);
+        model.addAttribute("productos", productos);
+        model.addAttribute("existencias", limite);
+        return "/pruebas/listado2";
+    }
 }

@@ -1,5 +1,5 @@
 package com.tienda.services.impl;
-
+/*
 import com.tienda.dao.RutaPermitDao;
 import com.tienda.domain.RutaPermit;
 import com.tienda.services.RutaPermitService;
@@ -53,4 +53,4 @@ public class RutaPermitServiceImpl
     public void delete(RutaPermit rutaPermit) {
         rutaPermitDao.delete(rutaPermit);
     }
-}
+}*/

@@ -63,5 +63,12 @@ public class ProductoServiceImpl
     public List<Producto> consultaSQL(double precioInf, double precioSup){
         return productoDao.consultaSQL(precioInf, precioSup);
     }
+    
+    //practica
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> consultaJPQLExistencias(int limite) {
+        return productoDao.consultaJPQLExistencias(limite);
+    }
 
 }

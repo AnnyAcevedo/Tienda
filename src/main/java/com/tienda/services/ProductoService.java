@@ -29,5 +29,7 @@ public interface ProductoService {
     public List<Producto> consultaJPQL(double precioInf, double precioSup);
            
     public List<Producto> consultaSQL(double precioInf, double precioSup);
+    
+    public List<Producto> consultaJPQLExistencias(int limite); //practica
 }
 

@@ -1,5 +1,5 @@
 package com.tienda.services;
-
+/*
 import com.tienda.domain.Role;
 import java.util.List;
 
@@ -16,4 +16,4 @@ public interface RoleService {
     // Se elimina el role que tiene el id pasado por parámetro
     public void delete(Role role);
     
-}
+}*/

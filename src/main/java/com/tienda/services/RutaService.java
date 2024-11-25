@@ -1,10 +1,10 @@
 package com.tienda.services;
 
-import com.tienda.domain.Ruta;
+//import com.tienda.domain.Ruta;
 import java.util.List;
 
 public interface RutaService {
-    
+   /* 
     // Se obtiene un listado de rutas en un List
     public List<Ruta> getRutas();
     
@@ -14,6 +14,6 @@ public interface RutaService {
     public void save(Ruta ruta);
     
     // Se elimina el ruta que tiene el id pasado por parámetro
-    public void delete(Ruta ruta);
+    public void delete(Ruta ruta); */
     
 }

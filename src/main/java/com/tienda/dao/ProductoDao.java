@@ -31,4 +31,8 @@ public interface ProductoDao extends
            + "ORDER BY a.descripcion ASC")
     public List<Producto> consultaSQL (@Param("precioInf") double precioInf,
             @Param("precioSup") double precioSup);
+    
+    //practica
+    @Query("SELECT p FROM Producto p WHERE p.existencias <= ?1")
+    List<Producto> consultaJPQLExistencias(int cantidad);
 }

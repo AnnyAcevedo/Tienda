@@ -1,5 +1,5 @@
 package com.tienda.services.impl;
-
+/*
 import com.tienda.dao.RolDao;
 import com.tienda.dao.UsuarioDao;
 import com.tienda.domain.Rol;
@@ -70,4 +70,4 @@ public class UsuarioServiceImpl implements UsuarioService {
     public void delete(Usuario usuario) {
         usuarioDao.delete(usuario);
     }
-}
+}*/
