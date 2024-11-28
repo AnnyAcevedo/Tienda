@@ -68,7 +68,7 @@
         <section th:fragment="consultas">
             <div class="row row-cols-3 p-2">
                 <div class="card p-2">
-                    <form method="post"
+                    <form method="get"
                           action="/pruebas/consultaAmpliada">
                         <div class="card-header bg-primary text-white texte-center">
                             <h4>[[#{pruebas.ampliadas}]]</h4>
@@ -100,7 +100,7 @@
                 </div>
 
                 <div class="card p-2">
-                    <form method="post"
+                    <form method="get"
                           action="/pruebas/consultaJPQL">
                         <div class="card-header bg-primary text-white texte-center">
                             <h4>[[#{pruebas.jpql}]]</h4>
@@ -132,7 +132,7 @@
                 </div>
 
                 <div class="card p-2">
-                    <form method="post"
+                    <form method="get"
                           action="/pruebas/consultaSQL">
                         <div class="card-header bg-primary text-white texte-center">
                             <h4>[[#{pruebas.nativo}]]</h4>
@@ -166,7 +166,7 @@
             </div>
 
             <div class="card p-2">
-                <form method="post" action="/pruebas/consultaJPQLExistencias">
+                <form method="get" action="/pruebas/consultaJPQLExistencias">
                     <div class="card-header bg-primary text-white text-center">
                         <h4>[[#{pruebas.existencias}]]</h4>
                     </div>

@@ -1,18 +1,18 @@
 package com.tienda;
 
-//import com.tienda.domain.Ruta;
-//import com.tienda.services.RutaPermitService;
-//import com.tienda.services.RutaService;
+import com.tienda.domain.Ruta;
+import com.tienda.services.RutaPermitService;
+import com.tienda.services.RutaService;
 import java.util.List;
 import java.util.Locale;
-//import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-//import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
-//import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-//import org.springframework.security.core.userdetails.UserDetailsService;
-//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-//import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
@@ -66,7 +66,7 @@ public class ProjectConfig implements WebMvcConfigurer {
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/registro/nuevo").setViewName("/registro/nuevo");
     }
-/*
+
     @Autowired
     private RutaPermitService rutaPermitService;
     @Autowired
@@ -100,6 +100,6 @@ public class ProjectConfig implements WebMvcConfigurer {
         builder.userDetailsService(userDetailsService)
                 .passwordEncoder(new BCryptPasswordEncoder());
 
-    }*/
+    }
 
 }

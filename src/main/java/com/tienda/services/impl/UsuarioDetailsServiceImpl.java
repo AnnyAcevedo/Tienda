@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.tienda.services.impl;
-/*
+
 import org.springframework.stereotype.Service;
 
 import com.tienda.dao.UsuarioDao;
@@ -56,4 +56,4 @@ public class UsuarioDetailsServiceImpl
                 usuario.getPassword(),
                 roles);
     }
-}*/
+}

@@ -1,5 +1,5 @@
 package com.tienda.domain;
- /* 
+ 
 import jakarta.persistence.*;
 import java.io.Serializable;
 import lombok.Data;
@@ -15,4 +15,4 @@ public class Ruta implements Serializable {
     private Long idRuta;        
     private String patron;
     private String rolName;    
-}  */   
+}   

@@ -1,5 +1,5 @@
 package com.tienda.domain;
-/*
+
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -25,4 +25,4 @@ public class Usuario implements Serializable {
     @OneToMany
     @JoinColumn(name="id_usuario", updatable=false)
     private List<Rol> roles;
-} */
+} 

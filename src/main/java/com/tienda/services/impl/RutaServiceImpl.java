@@ -1,5 +1,5 @@
 package com.tienda.services.impl;
-/*
+
 import com.tienda.dao.RutaDao;
 import com.tienda.domain.Ruta;
 import com.tienda.services.RutaService;
@@ -40,4 +40,4 @@ public class RutaServiceImpl
     public void delete(Ruta ruta) {
         rutaDao.delete(ruta);
     }
-}*/
+}

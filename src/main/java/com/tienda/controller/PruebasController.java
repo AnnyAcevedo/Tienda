@@ -64,7 +64,7 @@ public class PruebasController {
         return "/pruebas/listado2";
     }
     
-    @PostMapping("/consultaAmpliada")
+    @GetMapping("/consultaAmpliada")
     public String consultasAmpliadas(
             @RequestParam(value="precioInf") double precioInf,
             @RequestParam(value="precioSup") double precioSup,
@@ -76,7 +76,7 @@ public class PruebasController {
         return "/pruebas/listado2";
     }
     
-    @PostMapping("/consultaJPQL")
+    @GetMapping("/consultaJPQL")
     public String consultasJPQL(
             @RequestParam(value="precioInf") double precioInf,
             @RequestParam(value="precioSup") double precioSup,
@@ -88,7 +88,7 @@ public class PruebasController {
         return "/pruebas/listado2";
     }
     
-    @PostMapping("/consultaSQL")
+    @GetMapping("/consultaSQL")
     public String consultasSQL(
             @RequestParam(value="precioInf") double precioInf,
             @RequestParam(value="precioSup") double precioSup,
@@ -101,7 +101,7 @@ public class PruebasController {
     }
     
     //practica
-    @PostMapping("/consultaJPQLExistencias")
+    @GetMapping("/consultaJPQLExistencias")
     public String consultasJPQLExistencias(
             @RequestParam(value = "existencias") int limite,
             Model model) {
