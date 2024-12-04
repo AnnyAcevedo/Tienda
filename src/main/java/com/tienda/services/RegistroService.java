@@ -17,7 +17,7 @@ public interface RegistroService {
             String clave);
     
     //Método para habilitar completamente un usuario
-    public Model habilitaUsuario(Usuario usuario, 
+    public void habilitaUsuario(Usuario usuario, 
             MultipartFile imagenFile);
     
     //Método para recordar la clave de un usuario
