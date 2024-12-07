@@ -20,7 +20,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 
 @Controller
-public class IndexController1 {
+public class IndexController {
     
     @Autowired
     private ProductoService productoService;
